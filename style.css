@@ -29,9 +29,9 @@ body,html{
     border: none;
     color: white;
     background-color: royalblue;
-     background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 140px; 
+    background-size: 140px;
     cursor: pointer;
     transition: all 1s ease;
 }
@@ -61,7 +61,6 @@ body,html{
     height: 0px;
     animation: togglePlay 1s ease forwards;
 }
-
 @keyframes togglePlay{
     from{
         width: 0;
@@ -81,13 +80,11 @@ body,html{
         border-radius: 50px;
         color: white;
     }
-    
 }
 .disappear{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     animation: togglePlayRVS 0.8s ease forwards;
 }
 @keyframes togglePlayRVS{
@@ -101,18 +98,17 @@ body,html{
         background-color: #281C59;
         border-radius: 50px;
         color: white;
-
     }
     to{
         width: 0;
         border-radius: 50px;
         height: 120px;
     }
-    
 }
 .detailsAppear{
     position: absolute;
     opacity: 0;
+    right: 40%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -139,7 +135,6 @@ body,html{
         border-radius: 50px;
         color: white;
     }
-    
 }
 .scalebtn{
     transform: scale(1.1);
@@ -153,4 +148,327 @@ body,html{
     height: 100%;
     color: white;
     cursor: default;
+}
+@media (max-width: 1024px){
+    .detailsAppear{
+    position: absolute;
+    opacity: 0;
+    right: 35%;
+}
+    .btn{
+        position: absolute;
+        z-index: 999;
+        width: 85px;
+        height: 85px;
+        border-radius: 42px;
+        background-size: 120px;
+    }
+    .cbtn{
+        right: 20%;
+        border-width: 16px;
+    }
+    @keyframes togglePlay{
+        from{
+            width: 0;
+            height: 100px;
+            border-radius: 42px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 580px;
+            padding-left: 25px;
+            font-size: 0.85rem;
+            font-weight: 900;
+            height: 100px;
+            background-color: #281C59;
+            border-radius: 42px;
+            color: white;
+        }
+    }
+    @keyframes togglePlayRVS{
+        from{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 580px;
+            height: 100px;
+            padding-left: 25px;
+            background-color: #281C59;
+            border-radius: 42px;
+            color: white;
+        }
+        to{
+            width: 0;
+            border-radius: 42px;
+            height: 100px;
+        }
+    }
+    @keyframes togglePlayD{
+        from{
+            width: 290px;
+            height: 100px;
+            border-radius: 42px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 290px;
+            opacity: 1;
+            padding-left: 25px;
+            font-size: 0.85rem;
+            font-weight: 900;
+            height: 100px;
+            border-radius: 42px;
+            color: white;
+        }
+    }
+}
+@media (max-width: 768px){
+    .detailsAppear{
+    position: absolute;
+    opacity: 0;
+    right: 15%;
+}
+    .btn{
+        position: absolute;
+        z-index: 999;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        background-size: 100px;
+        right: 40%;
+    }
+    .cbtn{
+        right: 15%;
+        border-width: 14px;
+    }
+    @keyframes togglePlay{
+        from{
+            width: 0;
+            height: 85px;
+            border-radius: 35px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 80vw;
+            padding-left: 20px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            height: 85px;
+            background-color: #281C59;
+            border-radius: 35px;
+            color: white;
+        }
+    }
+    @keyframes togglePlayRVS{
+        from{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 80vw;
+            height: 85px;
+            padding-left: 20px;
+            background-color: #281C59;
+            border-radius: 35px;
+            color: white;
+        }
+        to{
+            width: 0;
+            border-radius: 35px;
+            height: 85px;
+        }
+    }
+    @keyframes togglePlayD{
+        from{
+            width: 55vw;
+            height: 85px;
+            border-radius: 35px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 55vw;
+            opacity: 1;
+            padding-left: 20px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            height: 85px;
+            border-radius: 35px;
+            color: white;
+        }
+    }
+}
+@media (max-width: 480px){
+    body,html{
+        font-size: 14px;
+    }
+    .detailsAppear{
+    position: absolute;
+    opacity: 0;
+    right: 5%;
+}
+    .btn{
+        position: absolute;
+        z-index: 999;
+        width: 58px;
+        height: 58px;
+        border-radius: 29px;
+        background-size: 80px;
+        right: 40%;
+    }
+    .cbtn{
+        right: 5%;
+        border-width: 10px;
+    }
+    @keyframes togglePlay{
+        from{
+            width: 0;
+            height: 70px;
+            border-radius: 29px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 90vw;
+            padding-left: 16px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            height: 70px;
+            background-color: #281C59;
+            border-radius: 29px;
+            color: white;
+        }
+    }
+    @keyframes togglePlayRVS{
+        from{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 90vw;
+            height: 70px;
+            padding-left: 16px;
+            background-color: #281C59;
+            border-radius: 29px;
+            color: white;
+        }
+        to{
+            width: 0;
+            border-radius: 29px;
+            height: 70px;
+        }
+    }
+    @keyframes togglePlayD{
+        from{
+            width: 70vw;
+            height: 70px;
+            border-radius: 29px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 70vw;
+            opacity: 1;
+            padding-left: 16px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            height: 70px;
+            border-radius: 29px;
+            color: white;
+        }
+    }
+    .aurther{
+        padding: 12px;
+    }
+}
+@media (max-width: 360px){
+     body,html{
+        font-size: 14px;
+    }
+    .detailsAppear{
+    position: absolute;
+    opacity: 0;
+    right: 5%;
+}
+    .btn{
+        position: absolute;
+        z-index: 999;
+        width: 58px;
+        height: 58px;
+        border-radius: 29px;
+        background-size: 80px;
+        right: 40%;
+    }
+    .cbtn{
+        right: 5%;
+        border-width: 10px;
+    }
+    @keyframes togglePlay{
+        from{
+            width: 0;
+            height: 70px;
+            border-radius: 29px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 90vw;
+            padding-left: 16px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            height: 70px;
+            background-color: #281C59;
+            border-radius: 29px;
+            color: white;
+        }
+    }
+    @keyframes togglePlayRVS{
+        from{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 90vw;
+            height: 70px;
+            padding-left: 16px;
+            background-color: #281C59;
+            border-radius: 29px;
+            color: white;
+        }
+        to{
+            width: 0;
+            border-radius: 29px;
+            height: 70px;
+        }
+    }
+    @keyframes togglePlayD{
+        from{
+            width: 70vw;
+            height: 70px;
+            border-radius: 29px;
+        }
+        to{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 70vw;
+            opacity: 1;
+            padding-left: 16px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            height: 70px;
+            border-radius: 29px;
+            color: white;
+        }
+    }
+    .aurther{
+        padding: 12px;
+    }
 }
